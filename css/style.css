@@ -35,7 +35,6 @@ p{
     margin:auto;
     padding: 0 2rem;
 }
-
 .text-primary{
     color: var(--primary-color);
 }
@@ -49,6 +48,7 @@ p{
     line-height: 1.1;
     margin-bottom: 0.75rem;
 }
+
 .py-1{padding: 1.5rem 0;}
 .py-2{padding: 2rem 0;}
 .py-3{padding: 3rem 0;}
@@ -63,6 +63,10 @@ p{
     }
 .bg-dark{
     background-color: var(--dark-color);
+    color: var(--light-color);
+}
+.bg-primary{
+    background-color: var(--primary-color);
     color: var(--light-color);
 }
 
@@ -82,9 +86,12 @@ p{
     padding: 0.5rem 2rem;
     border-radius: 5px;
 }
-
 .btn:hover{
     background: var(--primary-hover-color);
+}
+.btn-dark{
+    background-color: var(--dark-color);
+    color: var(--light-color)
 }
 
 /* navbar */
@@ -98,13 +105,11 @@ p{
     padding: 1rem;
     z-index: 1;
 }
-
 #navbar ul{
     display: flex;
     list-style: none;
     align-items: center;
 }
-
 #navbar ul a{
     color: var(--white-color);
     padding: 0.75rem;
@@ -193,4 +198,26 @@ p{
     display: block;
     margin: auto;
     width: 50%;
+}
+
+/* contact */
+#contact{
+    display: flex;
+}
+#contact .contact-form,
+#contact #map{
+    flex:1;
+}
+
+#contact .contact-form .form-group{
+    margin: 0.75rem ;
+}
+#contact .contact-form .form-group label{
+    display: block;
+}
+#contact .contact-form input,
+#contact .contact-form textarea
+{
+    width: 100%;
+    padding: 0.5rem;
 }
