@@ -32,7 +32,8 @@ p{
 
 .container{
     max-width: 1100px;
-    margin: 1rem auto;
+    margin:auto;
+    padding: 0 2rem;
 }
 
 .text-primary{
@@ -52,7 +53,18 @@ p{
 .py-2{padding: 2rem 0;}
 .py-3{padding: 3rem 0;}
 
-.bg-light{ background: var(--light-color);}
+.p-1{padding: 1.5rem;}
+.p-2{padding: 2rem;}
+.p-3{padding: 3rem;}
+
+.bg-light{
+     background: var(--light-color);
+     color: var(--dark-color);
+    }
+.bg-dark{
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
 
 .text-center{
     text-align: center;
@@ -129,7 +141,6 @@ p{
 }
 
 /* what */
-
 #what .items{
     display: flex;
     padding: 1rem;
@@ -146,4 +157,28 @@ p{
     padding: 1rem;
     border-radius: 50%;
     margin-bottom: 1rem;
+}
+
+/* Who */
+#who{
+    display: flex;
+}
+#who div{
+ flex: 1;
+}
+
+#who .who-img{
+    background: #333 url('../img/people.jpg') no-repeat center center/cover;
+}
+#who .who-content{
+}
+
+#who .list {
+    list-style: none;
+    margin: 0.5rem 0;
+}
+#who .list li{
+    border-bottom: #444 dotted 1px;
+    padding: 0.5rem 0;
+
 }
